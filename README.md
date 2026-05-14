@@ -1,6 +1,4 @@
-# 🛡️ lbGuard Discord Koruma Botu
-
-**🔒 LB Dev Tarafından Yapılmıştır | Satışını Yapmak Yasaktır 🔒**
+# 🛡️ Guard Discord Koruma Botu
 
 Discord sunucunuzu koruyan gelişmiş bir güvenlik botu. Sunucunuza gelebilecek farklı saldırı ve istismar türlerine karşı koruma sağlar.
 
@@ -43,17 +41,12 @@ lbGuard, aşağıdaki koruma sistemlerini içerir:
 
 ## 🚀 Kurulum
 
-1. Repoyu klonlayın:
-   ```
-   git clone https://github.com/lbguard/discord-bot
-   ```
-
-2. Bağımlılıkları yükleyin:
+1. Bağımlılıkları yükleyin:
    ```
    npm install
    ```
 
-3. `.env` dosyasını yapılandırın:
+2. `.env` dosyasını yapılandırın:
    ```
    # Discord Bot Tokeni
    TOKEN=token_buraya_gelecek
@@ -67,7 +60,7 @@ lbGuard, aşağıdaki koruma sistemlerini içerir:
    LOG_CHANNEL_ID=log_kanal_id_buraya
    ```
 
-4. Botu başlatın:
+3. Botu başlatın:
    ```
    npm start
    ```
@@ -76,10 +69,4 @@ lbGuard, aşağıdaki koruma sistemlerini içerir:
 
 Tüm koruma sistemleri için yapılandırma `src/utils/config.js` dosyasında bulunmaktadır. Her koruma sistemi için ayrı ayrı eşik değerleri ve alınacak önlemleri ayarlayabilirsiniz.
 
-## 📄 Lisans ve Telif Hakkı
-
-Bu proje MIT lisansı altında lisanslanmıştır. LB Dev tarafından geliştirilmiştir.
-
 **⚠️ UYARI:** Bu botun satışını yapmak kesinlikle yasaktır. Sadece kişisel ve topluluk kullanımı için ücretsiz olarak dağıtılmaktadır.
-
-**© 2025 LB Dev.** Tüm hakları saklıdır.
