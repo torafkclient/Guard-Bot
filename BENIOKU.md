@@ -8,7 +8,7 @@ Discord sunucunuzu koruyan gelişmiş bir güvenlik botu. Sunucunuza gelebilecek
 
 - **9 Farklı Koruma Sistemi**: Sunucunuzun güvenliğini sağlayan kapsamlı koruma modülleri
 - **Beyaz Liste**: Güvenilir kullanıcıları ve rolleri koruma sistemlerinden muaf tutma
-- **Veritabanı Desteği**: SQLite, MongoDB veya MySQL desteği
+- **Veritabanı Desteği**: SQLite, MongoDB, MySQL, JSON veya YAML desteği
 - **Log Sistemi**: Tüm güvenlik olaylarını takip etme
 - **Slash Komut Desteği**: Kullanımı kolay Discord slash komutları
 
@@ -36,41 +36,22 @@ lbGuard, aşağıdaki koruma sistemlerini içerir:
 | `/bot` | Bot hakkında bilgi verir |
 | `/davet` | Davet bağlantısı oluşturur |
 
-## 📋 Gereksinimler
+## 📦 Hazır Kurulum Dosyaları
 
-- Node.js 16.9.0 veya daha yeni
-- Discord Bot Tokeni
+- **botubaslat.bat**: Botu kolayca başlatmanızı sağlar
+- **komutlariyenile.bat**: Slash komutları Discord'a yeniden kaydetmenizi sağlar
 
-## 🚀 Kurulum
+## 💾 Veritabanı Seçenekleri
 
-1. Repoyu klonlayın:
-   ```
-   git clone https://github.com/lbguard/discord-bot
-   ```
+lbGuard, beş farklı veritabanı seçeneği sunar:
 
-2. Bağımlılıkları yükleyin:
-   ```
-   npm install
-   ```
+1. **SQLite** (varsayılan): Kurulum gerektirmeyen, dosya tabanlı hafif veritabanı
+2. **MongoDB**: Büyük sunucular için ölçeklenebilir NoSQL veritabanı
+3. **MySQL**: İlişkisel veritabanı desteği
+4. **JSON**: Basit, dosya tabanlı JSON veritabanı
+5. **YAML**: Okunabilir formatta YAML dosya veritabanı
 
-3. `.env` dosyasını yapılandırın:
-   ```
-   # Discord Bot Tokeni
-   TOKEN=token_buraya_gelecek
-
-   # Veritabanı Ayarları (mongodb, mysql veya sqlite)
-   DB_TYPE=sqlite
-
-   # Bot Ayarları
-   CLIENT_ID=bot_client_id_buraya
-   OWNER_ID=sahip_id_buraya
-   LOG_CHANNEL_ID=log_kanal_id_buraya
-   ```
-
-4. Botu başlatın:
-   ```
-   npm start
-   ```
+Veritabanı seçeneğini `.env` dosyasında `DB_TYPE` ayarından değiştirebilirsiniz.
 
 ## ⚙️ Yapılandırma
 
